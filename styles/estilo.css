@@ -1,7 +1,15 @@
-i {
+#user {
     font-size: 35px;
     color: #f00;
     text-align: right;
     justify-content: right;
-    margin-left: 450px;
+    margin-left: 1350px;
+}
+
+
+
+#carrito {
+    font-size: 33px;
+    color: #f00;
+    width: 10px;
 }
