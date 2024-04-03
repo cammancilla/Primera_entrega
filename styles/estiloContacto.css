@@ -1,0 +1,99 @@
+.navbar {
+    background-color: #d475ad;
+
+}
+
+body {
+    background-color: #acbbc2;
+
+}
+
+
+
+#userIcon {
+    font-size: 35px;
+    color: #0C1823;
+    text-align: right;
+    margin-left: 1350px;
+
+    justify-content: right;
+    margin-left: 950px;
+}
+
+
+
+#cartIcon {
+    font-size: 33px;
+    color: #0C1823;
+    width: 10px;
+
+}
+
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin-top: 50px;
+    /* Añade espacio superior para separarlo de la parte superior */
+}
+
+.bloque-color {
+    width: 800px;
+    /* Ancho del bloque */
+    height: 900px;
+    /* Altura del bloque */
+    background-color: #ffffff;
+    /* Color del bloque */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    border-radius: 10px;
+    border-color: #0C1823;
+}
+
+#msjIcon {
+    font-size: 25px;
+    color: #fdfeff;
+
+    /* margin-left: 220px; */
+    margin-bottom: 50px;
+
+}
+
+.contact-block {
+    background-color: #3f51b5;
+    /* Color de fondo del bloque */
+    color: white;
+    /* Color del texto */
+    padding: 5px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 30px;
+    /* Espacio inferior entre el bloque y el formulario */
+}
+
+
+#h3Form {
+    justify-content: left;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: auto;
+
+}
+
+
+#pBloque {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
