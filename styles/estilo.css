@@ -1,25 +1,40 @@
-#user {
+#userIcon {
     font-size: 35px;
     color: #f00;
     text-align: right;
-    justify-content: right;
     margin-left: 1350px;
+
 }
 
 
 
-#carrito {
+#cartIcon {
     font-size: 33px;
     color: #f00;
     width: 10px;
+
 }
 
-h5.titulo{
-    color: #1B2631  ;
-  
- 
+h5.titulo {
+    color: #1B2631;
+
+
 }
 
-p.subtitulo{
-    color: #4D5656   ;
+p.subtitulo {
+    color: #4D5656;
+}
+
+
+#audio-container {
+    display: none;
+}
+
+.navbar-nav .nav-link:active {
+    font-weight: bold;
+
+}
+
+#h2Titulo {
+    color: #ffffff;
 }
