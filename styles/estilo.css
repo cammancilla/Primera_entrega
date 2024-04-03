@@ -1,16 +1,16 @@
 #user {
     font-size: 35px;
-    color: #f00;
+    color: #0C1823;
     text-align: right;
     justify-content: right;
-    margin-left: 1350px;
+    margin-left: 950px;
 }
 
 
 
 #carrito {
     font-size: 33px;
-    color: #f00;
+    color: #0C1823;
     width: 10px;
 }
 
@@ -23,3 +23,12 @@ h5.titulo{
 p.subtitulo{
     color: #4D5656   ;
 }
+
+ul.navbar-nav{
+    background-color: #4072A4;
+}
+
+a.navbar-brand{
+    background-color:  #2775C3 ;
+}
+    
