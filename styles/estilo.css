@@ -31,4 +31,12 @@ ul.navbar-nav{
 a.navbar-brand{
     background-color:  #2775C3 ;
 }
+
+body{
+    background-color: #F4F6F7 ;
+}
+
+h2.seccion{
+    text-align: center;
+}
     
