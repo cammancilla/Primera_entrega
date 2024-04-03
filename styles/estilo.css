@@ -41,12 +41,10 @@ p.subtitulo {
     color: #ffffff;
 }
 
-ul.navbar-nav {
-    background-color: #4072A4;
-}
 
-a.navbar-brand {
-    background-color: #2775C3;
+.navbar {
+    background-color: #d475ad;
+
 }
 
 body {
