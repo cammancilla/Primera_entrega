@@ -1,238 +1,228 @@
 .navbar {
-    background-color: #d475ad;
+  background-color: #d475ad;
 
 }
 
 body {
-    background-color: #acbbc2;
+  background-color: #acbbc2;
 
 }
 
 
 
 #userIcon {
-    font-size: 35px;
-    color: #0C1823;
-    text-align: left;
-    /* margin-left: 10px; */
+  font-size: 35px;
+  color: #0C1823;
+  text-align: left;
+  /* margin-left: 10px; */
 
-    justify-content: right;
-    
+  justify-content: right;
+
 }
 
 
 
 #cartIcon {
-    font-size: 33px;
-    color: #0C1823;
-    width: 10px;
+  font-size: 33px;
+  color: #0C1823;
+  width: 10px;
 
 }
 
 
 .mb-2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 
 .mb-1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-    text-align: center;
-    /* Centra el contenido horizontalmente */
-    margin-top: 50px;
-    /* Añade espacio superior para separarlo de la parte superior */
+  text-align: center;
+  /* Centra el contenido horizontalmente */
+  margin-top: 50px;
+  /* Añade espacio superior para separarlo de la parte superior */
 }
 
 .bloque-color {
-    width: 800px;
-    /* Ancho del bloque */
-    height: 900px;
-    /* Altura del bloque */
-    background-color: #ffffff;
-    /* Color del bloque */
-    margin: 0 auto;
-    /* Centrar horizontalmente */
-    border-radius: 10px;
-    border-color: #0C1823;
+  width: 800px;
+  /* Ancho del bloque */
+  height: 1200px;
+  /* Altura del bloque */
+  background-color: #ffffff;
+  /* Color del bloque */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+  border-radius: 10px;
+  border-color: #0C1823;
 }
 
 #msjIcon {
-    font-size: 25px;
-    color: #fdfeff;
+  font-size: 25px;
+  color: #fdfeff;
 
-    /* margin-left: 220px; */
-    margin-bottom: 50px;
+  /* margin-left: 220px; */
+  margin-bottom: 50px;
 
 }
 
 .contact-block {
-    background-color: #3f51b5;
-    /* Color de fondo del bloque */
-    color: white;
-    /* Color del texto */
-    padding: 5px;
-    /* Espaciado interno */
-    text-align: center;
-    /* Centrar el texto */
-    margin-bottom: 30px;
-    /* Espacio inferior entre el bloque y el formulario */
+  background-color: #3f51b5;
+  /* Color de fondo del bloque */
+  color: white;
+  /* Color del texto */
+  padding: 5px;
+  /* Espaciado interno */
+  text-align: center;
+  /* Centrar el texto */
+  margin-bottom: 30px;
+  /* Espacio inferior entre el bloque y el formulario */
 }
 
 
 h3 {
-    justify-content: center;
-    text-align: center;
-    
-    margin-top: auto;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: auto;
 
 }
 
 
 #pBloque {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: justify;
-    text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-align: center;
 }
 
 
-#EstiloFormulario{
-    input[type=text], input[type=email], textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 6px; /* Updated margin-bottom value */
-        resize: vertical;
-    }
+#EstiloFormulario .form-group {
+  margin-bottom: 20px;
+}
+
+#EstiloFormulario label {
+  display: block;
+}
+
+#EstiloFormulario input[type="text"],
+#EstiloFormulario input[type="email"],
+#EstiloFormulario textarea {
+  width: calc(100% - 24px);
+  /* Para dejar espacio para el padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+#EstiloFormulario textarea {
+  height: 150px;
+  /* Altura inicial del textarea */
+}
+
+#EstiloFormulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
 }
 
 
 select {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-  }
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
 
 
-label{
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
 
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
 
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.9;
-  }
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
 
-  .btn:hover {
-    opacity: 1;
-  }
+.btn:hover {
+  opacity: 1;
+}
 
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-  .col-50 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-  }
 
-  .col-50 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-  }
 
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
 
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
 
-  .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.9;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .btn:hover {
-    opacity: 1;
-  }
 
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
 
-  .col-50 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-  }
 
-  .col-50 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-  }
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-    .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-    }
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
