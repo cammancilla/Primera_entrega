@@ -96,35 +96,36 @@ h3 {
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: justify;
   text-align: center;
 }
 
 
-#EstiloFormulario .form-group {
-  margin-bottom: 20px;
-}
+
 
 #EstiloFormulario label {
   display: block;
 }
 
 #EstiloFormulario input[type="text"],
-#EstiloFormulario input[type="email"],
-#EstiloFormulario textarea {
-  width: calc(100% - 24px);
+#EstiloFormulario input[type="email"] {
+  width: calc(80% - 10px);
   /* Para dejar espacio para el padding */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  resize: vertical;
+  justify-content: center;
 }
 
 #EstiloFormulario textarea {
   height: 150px;
+  width: 250px;
+  text-align: center;
   /* Altura inicial del textarea */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+  font-family: Courier, monospace;
 }
 
 #EstiloFormulario select {
@@ -133,7 +134,7 @@ h3 {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
+  /* margin-top: 6px; */
   resize: vertical;
 }
 
@@ -164,62 +165,12 @@ label {
   margin-top: 6px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.9;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-
-
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
 
 .col-50 {
   float: left;
