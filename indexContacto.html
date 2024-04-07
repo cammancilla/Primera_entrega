@@ -66,58 +66,178 @@
             </div>
         </nav>
 
-        <div class="contact-block">
-            <h2>Contactanos</h2>
-            <i class="bi bi-send" id="msjIcon"></i>
-        </div>
-
-        <div class="bloque-color">
-            <h3 id="h3Form">Formulario de Contacto</h3>
-            <p id="pBloque">Hola, para poder ayudarte, te pedimos que completes correctamente todos los campos
-                solicitados en el
-                siguiente formulario. Uno de nuestros ejecutivos de atención al cliente te contactará en un plazo de 24
-                horas hábiles. Recuerda que siempre te puedes comunicar con nuestro canal de atención telefónica al +56
-                2 2560 0000 de lunes a domingo desde las 09:00 hasta las 18:00 hrs, excepto feriados/festivos.
-
-            </p>
-
-            <form action="" id="EstiloFormulario">
-                <label for="nombre" id>Nombre:</label>
-                <input type="text" name="Nombre:" id="">
-
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="Apelldido:" id="">
-
-                <label for="rut">Rut:</label>
-                <input type="text" name="Rut" id="" placeholder="Ingresa tu rut">
-
-                <label for="telefono">Telefono:</label>
-                <input type="text" name="telefono" id="" value="+56">
-
-                <label for="email">Correo:</label>
-                <input type="email" name="correo" id="" placeholder="example@gmail.com">
-
-                <label for="">Motivo*</label>
-                <select name="motivo" id="motivo">
-                    <option value="-1" selected="selected">-Seleccione Motivo - </option>
-                    <option value="2">Consultas</option>
-                    <option value="3">Solicitudes</option>
-                    <option value="4">Reclamos</option>
 
 
 
+        <form class="container">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
 
-            </form>
-            <h3>
-                <label for="mensaje">Mensaje:</label>
-            </h3>
-            <textarea name="" id="" cols="35" rows="10"></textarea>
-        </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form6" class="form-control" />
+                        <label class="form-label" for="form6Example1">Primer Nombre</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form6" class="form-control" />
+                        <label class="form-label" for="form6Example2">Apellido</label>
+                    </div>
+                </div>
+            </div>
 
 
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form6" class="form-control" />
+                <label class="form-label" for="form6Example5">Email</label>
+            </div>
+
+            <!-- Number input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="number" id="form6Example6" class="form-control" />
+                <label class="form-label" for="form6Example6">Telefono</label>
+            </div>
+
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                <label class="form-label" for="form6Example7">Información Adicional</label>
+            </div>
+
+
+
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Enviar
+                comentarios</button>
+        </form>
+
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4" style="background-color: #2a36e4">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Contacta con nosotros en nuestras Redes Sociales:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="https://www.instagram.com/duocucsedeantoniovaras?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="text-white me-4">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/DuocUC.AntonioVaras" class="text-white me-4">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/DuocUC" class="text-white me-4">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=VDDUViX3hdU" class="text-white me-4">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="https://github.com/cammancilla/Primera_entrega" class="text-white me-4">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Muchacho Store</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #5d42a5; height: 2px" />
+                            <p>
+                                Aquí encontrarás los mejores productos de tecnología a los mejores precios.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Productos</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Parlantes</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Pendrives</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Audifonos</a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Tu cuenta</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Trabaja con nosotros</a>
+                            </p>
+
+                            <p>
+                                <a href="#!" class="text-white">Ayuda</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contactos</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="bi bi-house-door-fill mr-3"></i> Antonio Varas 666, Providencia, Región
+                                Metropolitana, Chile</p>
+                            <p><i class="bi bi-chat-left-fill mr-3"></i> info@example.com</p>
+                            <p><i class="bi bi-telephone-plus-fill mr-3"></i> (2) 2354 0400</p>
+
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2024 Copyright: Camila Mancilla, Fernando
+                Muñoz
+                <a class="text-white" href="https://github.com/cammancilla/Primera_entrega">
+                    https://github.com/cammancilla/Primera_entrega</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 
 
     </main>
+
+
 </body>
 
 </html>

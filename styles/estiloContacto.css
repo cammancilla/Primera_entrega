@@ -29,151 +29,25 @@ body {
 
 }
 
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
-
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-h2 {
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c2331;
+  /* Color de fondo para el footer */
   text-align: center;
-  /* Centra el contenido horizontalmente */
+  /* Ajustar el texto al centro */
+  padding: 20px 0;
+  /* Espaciado interno del footer */
   margin-top: 50px;
-  /* Añade espacio superior para separarlo de la parte superior */
 }
 
-.bloque-color {
-  width: 800px;
-  /* Ancho del bloque */
-  height: 1200px;
-  /* Altura del bloque */
-  background-color: #ffffff;
-  /* Color del bloque */
-  margin: 0 auto;
-  /* Centrar horizontalmente */
-  border-radius: 10px;
-  border-color: #0C1823;
+/* Aplicar estilos para text-lg-start y text-white */
+.footer.text-lg-start {
+  text-align: left;
 }
 
-#msjIcon {
-  font-size: 25px;
-  color: #fdfeff;
-
-  /* margin-left: 220px; */
-  margin-bottom: 50px;
-
-}
-
-.contact-block {
-  background-color: #3f51b5;
-  /* Color de fondo del bloque */
+.footer.text-white {
   color: white;
-  /* Color del texto */
-  padding: 5px;
-  /* Espaciado interno */
-  text-align: center;
-  /* Centrar el texto */
-  margin-bottom: 30px;
-  /* Espacio inferior entre el bloque y el formulario */
-}
-
-
-h3 {
-  justify-content: center;
-  text-align: center;
-
-  margin-top: auto;
-
-}
-
-
-#pBloque {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-
-
-
-#EstiloFormulario label {
-  display: block;
-}
-
-#EstiloFormulario input[type="text"],
-#EstiloFormulario input[type="email"] {
-  width: calc(80% - 10px);
-  /* Para dejar espacio para el padding */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  justify-content: center;
-}
-
-#EstiloFormulario textarea {
-  height: 150px;
-  width: 250px;
-  text-align: center;
-  /* Altura inicial del textarea */
-  margin: 0 auto;
-  /* Centrar horizontalmente */
-  font-family: Courier, monospace;
-}
-
-#EstiloFormulario select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  /* margin-top: 6px; */
-  resize: vertical;
-}
-
-
-select {
-  width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-}
-
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-
-.col-50 {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
+  /* Establecer el color de texto a blanco */
 }
