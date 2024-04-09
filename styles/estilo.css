@@ -47,10 +47,31 @@ p.subtitulo {
 
 }
 
-body {
-    background-color: #F4F6F7;
+.carousel {
+    background-color: #D6DBDF ;
 }
 
-h2.seccion {
+h3.seccion {
     text-align: center;
+    font-family:   Century Gothic;
+    font-weight: bold;
 }
+
+div.card{
+    background-color:  #EAF2F8;
+
+}
+
+div.col{
+    background-color: #EBF5FB ;
+}
+
+p.card-text{
+    text-align: left;
+    line-height: 30px;
+}
+
+h5.card-text2{
+    text-align: left;
+}
+
