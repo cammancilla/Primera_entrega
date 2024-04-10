@@ -82,3 +82,8 @@ p.card-text {
 h5.card-text2 {
     text-align: left;
 }
+
+a{
+    text-decoration: none;
+    color:black;
+}
