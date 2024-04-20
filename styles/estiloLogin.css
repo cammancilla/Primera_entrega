@@ -1,0 +1,47 @@
+/* Header navbar */
+
+.navbar {
+    background-color: #d475ad;
+
+}
+
+.navbar-nav .nav-link .bi {
+
+    font-size: 1.0rem;
+
+}
+
+.nav-item.d-flex {
+    margin-left: 10px;
+    width: 20%;
+}
+
+.navbar-nav .nav-link:active {
+    font-weight: bold;
+
+}
+
+
+
+
+/* Iconos Navbar */
+
+#userIcon,
+#cartIcon {
+    color: #2e2b2b;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    /* margin: auto; */
+
+}
+
+
+/* Header Navbar */
+
+
+/* Lista de productos */
+
+.dropdown-menu {
+    color: #003464;
+}

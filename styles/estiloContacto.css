@@ -9,25 +9,16 @@ body {
 }
 
 
-
-#userIcon {
-  font-size: 35px;
-  color: #0C1823;
-  text-align: left;
-  /* margin-left: 10px; */
-
-  justify-content: right;
-
-}
-
-
-
+#userIcon,
 #cartIcon {
-  font-size: 33px;
-  color: #0C1823;
-  width: 10px;
+  color: #2e2b2b;
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  /* margin: auto; */
 
 }
+
 
 .footer {
   position: relative;
@@ -53,7 +44,7 @@ body {
 }
 
 
-#tituloFormulario{
+#tituloFormulario {
   color: #85a7c7;
   font-size: 30px;
   font-weight: bold;
@@ -62,6 +53,18 @@ body {
 }
 
 
-p{
+p {
   text-align: center;
+}
+
+
+.contactanos {
+  text-align: center;
+}
+
+
+.contactInfo {
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
 }
