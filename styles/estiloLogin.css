@@ -45,3 +45,13 @@
 .dropdown-menu {
     color: #003464;
 }
+
+.btn.btn-primary.btn-lg.btn-block {
+    background-color: #d475ad;
+    border: none;
+    /* Centrar boton */
+    margin: auto;
+    display: block;
+    margin-top: 3pc;
+    margin-bottom: 5pc;
+}
