@@ -1,4 +1,13 @@
-/* Header navbar */
+#userIcon,
+#cartIcon {
+    color: #2e2b2b;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    /* margin: auto; */
+
+}
+
 
 .navbar {
     background-color: #d475ad;
@@ -22,40 +31,6 @@
 }
 
 
-
-
-/* Iconos Navbar */
-
-#userIcon,
-#cartIcon {
-    color: #2e2b2b;
-    background-color: transparent;
-    border: none;
-    font-size: 1.8rem;
-    /* margin: auto; */
-
-}
-
-
-/* Header Navbar */
-
-
-/* Lista de productos */
-
-.dropdown-menu {
-    color: #003464;
-}
-
-.dropdown-item {
-    color: #003464;
-}
-
-
-.container {
-    margin-top: 50px;
-}
-
-/* col-md-6 mx-auto */
 .col-md-6.mx-auto {
     margin-top: 50px;
     margin-bottom: 50px;
