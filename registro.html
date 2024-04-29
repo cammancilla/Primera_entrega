@@ -64,47 +64,45 @@
 
     <!-- Formulario de Registro -->
     <!-- Input: Nombre, Apellido, Rut, Correo  -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="card card-body">
-                    <h3 class="text-center mb-4">Inicio de Sesión</h3>
-                    <form action="indexprincpal.html" id="loginForm">
-                        <div class="mb-4">
-                            <label for="correo" class="form-label">Nombre</label>
-                            <input type="text" id="nombre" class="form-control" required
-                                placeholder="Coloca tu nombre aquí.">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="apellido" class="form-label">Apellido</label>
-                            <input type="text" name="apellido" id="apellido" class="form-control" required>
-                        </div>
-
-
-
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" id="password" class="form-control" required>
-                        </div>
-                        <div class="botones">
-                            <center> <button type="submit" class="btn btn-primary btn-lg btn-block"
-                                    id="btnLogin">Iniciar Sesión</button></center>
-                            <!-- Boton Limpiar -->
-                            <center><button type="button" class="btn btn-secondary btn-lg btn-block"
-                                    id="btnClear">Limpiar</button></center>
-                            <!-- Boton Verificar -->
-                            <center><button type="button" class="btn btn-success btn-lg btn-block"
-                                    id="btnVerify">Verificar</button></center>
-                        </div>
-                    </form>
-                    <center>
-                        <p class="lead mt-4">¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
-                    </center>
+            <form action="" class="mb-6 text-center mx-auto" id="formulario">
+                <div class="">
+                    <h2 class="mb-3">Registro de Sesión</h2>
                 </div>
-            </div>
+                <div class="form-floating w-50 mx-auto mb-3">
+                    <label for="rut">RUT</label>
+                    <input type="text" class="form-control" id="txtRut" placeholder="Ingrese su rut" required>
+                </div>
+
+                <div class="form-floating w-50 mx-auto mb-3">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="row mx-auto">
+                    <div class="col mb-3">
+                        <div class="form-floating w-50 ms-auto">
+                            <input type="text" class="form-control" id="txtAppaterno" name="txtAppaterno"
+                                placeholder="Apellido paterno" required>
+                            <label for="txtAppaterno">Apellido paterno</label>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="form-floating w-50">
+                            <input type="text" class="form-control" id="txtApmaterno" name="txtApmaterno"
+                                placeholder="Apellido materno" required>
+                            <label for="txtApmaterno">Apellido materno</label>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
         </div>
     </div>
+
+
+
 
     <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
         <!-- Section: Social media -->
