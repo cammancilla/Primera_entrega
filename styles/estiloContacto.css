@@ -3,10 +3,7 @@
 
 }
 
-body {
-  background-color: #acbbc2;
 
-}
 
 
 #userIcon,
@@ -44,27 +41,26 @@ body {
 }
 
 
-#tituloFormulario {
-  color: #85a7c7;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
+/* * Reducir tamañao de letra del formulario */
+
+.form-control {
+  font-size: 0.8rem;
 }
 
+/* * Reducir tamaño de letra de los botones */
+
+.btn {
+  font-size: 0.8rem;
+}
+
+/* * Reducir tamaño de letra de los labels */
+
+label {
+  font-size: 0.8rem;
+}
+
+/* * Reducir tamaño de letra de los textos */
 
 p {
-  text-align: center;
-}
-
-
-.contactanos {
-  text-align: center;
-}
-
-
-.contactInfo {
-  text-align: center;
-  margin-top: 20px;
-  justify-content: center;
+  font-size: 0.8rem;
 }
