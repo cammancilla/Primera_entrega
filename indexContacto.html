@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/estiloContacto.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/validacionesContacto.js"></script>
 </head>
 
 <body>
@@ -67,9 +69,9 @@
 
         <div class="container-fluid">
             <div class="row">
-                <form action="" id="formulario" class="col-6 text-center mx-auto shadow-lg mt-5">
+                <form action="" id="formularioContacto" class="col-6 text-center mx-auto shadow-lg mt-5 mb-5">
                     <div class="my-3">
-                        <h4>Formulario de registro</h4>
+                        <h4>Contáctanos</h4>
                     </div>
                     <div class="form-floating w-50 mx-auto mb-3">
                         <input type="text" class="form-control" id="txtRut" name="txtRut" placeholder="Ingrese su rut"
@@ -97,44 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="date" class="form-control" id="txtFecha" name="txtFecha"
-                            placeholder="Fecha de Nacimiento" required>
-                        <label for="txtFecha">Fecha de Nacimiento</label>
-                    </div>
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="number" class="form-control" id="txtEdad" name="txtEdad" placeholder="Edad"
-                            required>
-                        <label for="txtEdad">Edad</label>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 mb-2">
-                            <label for="">Seleccione su genero</label>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="Masculino" name="optGenero"
-                                    id="optGenero1">
-                                <label class="form-check-label" for="optGenero1">
-                                    Masculino
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="Femenino" name="optGenero"
-                                    id="optGenero2">
-                                <label class="form-check-label" for="optGenero2">
-                                    Femenino
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="Otro" name="optGenero"
-                                    id="optGenero3">
-                                <label class="form-check-label" for="optGenero3">
-                                    Otro
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="form-floating w-50 mx-auto mb-3">
                         <input type="email" class="form-control" id="txtMail" name="txtMail" placeholder="Correo"
                             required>
@@ -145,22 +110,18 @@
                             placeholder="Telefono" required>
                         <label for="txtTelefono">Telefono</label>
                     </div>
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="text" class="form-control" id="txtProf" name="txtProf" placeholder="Profesion"
-                            required>
-                        <label for="txtProf">Profesion</label>
-                    </div>
+                    
                     <div class="form-floating w-50 mx-auto mb-5 ">
                         <textarea class="form-control" id="txtComentario" name="txtComentario" placeholder="Comentario"
-                            required style="height: 200px;resize: none;"></textarea>
-                        <label for="txtComentario">Aspiraciones</label>
+                            required style="height: 100px;resize: none;"></textarea>
+                        <label for="txtComentario">Ingrese su comentario</label>
                     </div>
                     <div id="check">
 
                     </div>
                     <div class="w-50 mx-auto mb-3">
-                        <button type="button" id="btnEnviar" class="btn btn-outline-primary">Ingresar</button>
-                        <button type="button" id="btnGenerar" class="btn btn-outline-success">Generar Carta</button>
+                        <button type="button" id="btnEnviar"    class="btn btn-outline-primary">Ingresar</button>
+                        <button type="button" id="btnVerificar" class="btn btn-outline-success">Validar</button>
                     </div>
                 </form>
             </div>

@@ -22,45 +22,55 @@
   bottom: 0;
   width: 100%;
   background-color: #1c2331;
-  /* Color de fondo para el footer */
+  
   text-align: center;
-  /* Ajustar el texto al centro */
+
   padding: 20px 0;
-  /* Espaciado interno del footer */
+  
   margin-top: 50px;
 }
 
-/* Aplicar estilos para text-lg-start y text-white */
-.footer.text-lg-start {
-  text-align: left;
-}
+
 
 .footer.text-white {
   color: white;
   /* Establecer el color de texto a blanco */
 }
 
+/* btn btn-outline-primary */
 
-/* * Reducir tamañao de letra del formulario */
-
-.form-control {
+#btnEnviar{
+  background-color: #d475ad;
+  color: white;
+  border: none;
   font-size: 0.8rem;
+
+}
+/* Quitar botones a input number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
-/* * Reducir tamaño de letra de los botones */
+input[type=number] { -moz-appearance:textfield; }
 
-.btn {
-  font-size: 0.8rem;
-}
 
-/* * Reducir tamaño de letra de los labels */
+
+
+
 
 label {
   font-size: 0.8rem;
 }
 
-/* * Reducir tamaño de letra de los textos */
+
 
 p {
+  font-size: 0.8rem;
+}
+
+
+#txtAppaterno, #txtApmaterno{
   font-size: 0.8rem;
 }
