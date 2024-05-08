@@ -14,6 +14,10 @@ h5.titulo {
 
 }
 
+body{
+    margin:0;
+}
+
 p.subtitulo {
     color: #4D5656;
 }
@@ -56,7 +60,7 @@ p.subtitulo {
 
 h3.seccion {
     text-align: center;
-    font-family: Century Gothic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -82,3 +86,39 @@ a {
     text-decoration: none;
     color: black;
 }
+
+#cuenta-carrito{
+    background-color: #2A7CDF ;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+ 
+}
+
+.añadir{
+    background-color: #2A7CDF ;
+    color:#D6DBDF;
+    padding: 5px 10px;
+    border:unset;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 0 5px #707B7C ;
+    transition: 200ms;
+}
+
+.card:hover{
+    translate:0 -10px;
+    box-shadow: 0 0 5px #707B7C ;
+}
+
+.precio{
+    text-align: center;
+}
+
