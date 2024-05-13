@@ -1,26 +1,29 @@
 let allContainerCart = document.querySelector('.products');
-let cointanerBuyCart = document.querySelector('row row-cols-1 row-cols-md-2 g-4')
+// let containerBuyCart = document.querySelector('.row row-cols-1 row-cols-md-2 g-4')
+let containerBuyCart = document.querySelector('.card-cart')
 
-let buyThings = []
+
+let buyThings = [];
 
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
 }
 
 function addProduct(e){
-    e.preventDefault();
+    // e.preventDefault();
+
     if(e.target.classList.contains('btn-add-cart')){
-    const selectProduct = e.target.parentElement;
+    const selectProduct = e.target.parentElement.parentElement;
     readTheContent(selectProduct);
-    
+    console.log("Test");
     }
 }
 
 function readTheContent(product){
     const infoProduct = {
-        image: product.querySelector('div img').src,
-        tittle: product.querySelector('div .card-tittle').textContent,
-        price: product.querySelector('div .precio').textContent,
+        image: product.querySelector('.card img').getAttribute("src"),
+        title: product.querySelector('.card-title').textContent,
+        price: product.querySelector('.precio').textContent,
         id: product.querySelector('button').getAttribute('data-id'),
         amount: 1
     } 
@@ -30,23 +33,26 @@ function readTheContent(product){
 }
 
 function loadHtml(){
+    // clearHtml();
     buyThings.forEach(product => {
-        const {image, tittle, price, amount, id} = product;
+        const {image, title, price, amount, id} = product;
         const row = document.createElement('div');
         row.classList.add('card');
         row.innerHTML = `
-        <img src="${image}" class="rounded mx-auto d-block" alt="cargando..." height="" width="">
+        <img src="${image}" alt="cargando..." >
         <div class="card-body">
-          <h5 class="card-title">${tittle}</h5>
+          <h5 class="card-title">${title}</h5>
           <p class="precio">${price}</p>
-          <button type="button" class="btn-add-cart" data-id="3">Añadir al carrito</button>
           <h6> Amount: ${amount}</h6>
           <span class="delete-product" data-id="${id}">X</span>
         </div>
 
         `;
 
-        cointanerBuyCart.appendChild(row);
+        containerBuyCart.appendChild(row);
     });
 }
 
+// function clearHtml(){
+//     containerBuyCart.innerHTML = '';
+// }
