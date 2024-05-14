@@ -1,5 +1,5 @@
 let allContainerCart = document.querySelector('.products');
-// let containerBuyCart = document.querySelector('.row row-cols-1 row-cols-md-2 g-4')
+//let containerBuyCart = document.querySelector('.row row-cols-1 row-cols-md-2 g-4')
 let containerBuyCart = document.querySelector('.card-cart')
 
 
@@ -10,8 +10,8 @@ function loadEventListenrs(){
 }
 
 function addProduct(e){
-    // e.preventDefault();
-
+    //e.preventDefault();
+   
     if(e.target.classList.contains('btn-add-cart')){
     const selectProduct = e.target.parentElement.parentElement;
     readTheContent(selectProduct);
@@ -39,7 +39,7 @@ function loadHtml(){
         const row = document.createElement('div');
         row.classList.add('card');
         row.innerHTML = `
-        <img src="${image}" alt="cargando..." >
+        <img src="${image}" alt="cargando..." width="400px" heigth="80px">
         <div class="card-body">
           <h5 class="card-title">${title}</h5>
           <p class="precio">${price}</p>
@@ -53,6 +53,6 @@ function loadHtml(){
     });
 }
 
-// function clearHtml(){
-//     containerBuyCart.innerHTML = '';
-// }
+//function clearHtml(){
+    //containerBuyCart.innerHTML = '';
+//}

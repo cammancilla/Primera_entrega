@@ -9,7 +9,8 @@
 }
 
 h5.titulo {
-    color: #1B2631;
+    color: white;
+    font-size: 24px;
 
 
 }
@@ -19,8 +20,15 @@ body{
 }
 
 p.subtitulo {
-    color: #4D5656;
+    color: white;
+    font-size: 18px;
 }
+.carousel-caption{
+    background-color: rgba(8, 34, 75, 0.185); /* Fondo semi-transparente para mayor legibilidad del texto */
+        padding: 10px;
+        border-radius: 5px;
+}
+
 
 /* Header navbar */
 
@@ -54,9 +62,7 @@ p.subtitulo {
 
 
 
-.carousel {
-    background-color: #D6DBDF;
-}
+
 
 h3.seccion {
     text-align: center;
