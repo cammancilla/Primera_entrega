@@ -140,11 +140,13 @@ a {
     min-width: 290px;
 }
 
-p.close-btn{
-    top: -4px;
-    right: 6px;
-    cursor: pointer;
-    color: #000;
+.btn-close{
+    cursor: pointer; 
+    
+}
+
+h3.title-cart{
+    text-align: center;
 }
 
 .cart-products .item img{
@@ -180,7 +182,7 @@ p.close-btn{
     font-family: system-ui;
     cursor: pointer;
 }
-.cart-products h3{
+h3.cart-products {
     margin-bottom: 0;
 }
 .cart-products .item .item-content h5.cart-price{
