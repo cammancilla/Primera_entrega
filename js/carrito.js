@@ -1,5 +1,4 @@
 let allContainerCart = document.querySelector('.products');
-//let containerBuyCart = document.querySelector('.row row-cols-1 row-cols-md-2 g-4')
 let containerBuyCart = document.querySelector('.card-cart')
 
 
@@ -21,7 +20,7 @@ function addProduct(e){
 
 function readTheContent(product){
     const infoProduct = {
-        image: product.querySelector('.card img').getAttribute("src"),
+        image: product.querySelector('img').getAttribute("src"),
         title: product.querySelector('.card-title').textContent,
         price: product.querySelector('.precio').textContent,
         id: product.querySelector('button').getAttribute('data-id'),
