@@ -69,14 +69,14 @@
 
         <div class="container-fluid">
             <div class="row">
-                <form action="" id="formularioContacto" class="col-6 text-center mx-auto shadow-lg mt-5 mb-5">
+                <form id="formularioContacto" class="col-6 text-center mx-auto shadow-lg mt-5 mb-5">
                     <div class="my-3">
                         <h4>Contáctanos</h4>
                     </div>
                     <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="text" class="form-control" id="txtRut" name="txtRut" placeholder="Ingrese su rut"
+                        <input type="text" class="form-control" id="txtRut" name="txtRut" placeholder="Ingrese su RUT"
                             required>
-                        <label for="txtRut">Rut</label>
+                        <label for="txtRut">RUT</label>
                     </div>
                     <div class="form-floating w-50 mx-auto mb-3">
                         <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Nombre"
@@ -85,21 +85,20 @@
                     </div>
                     <div class="row mx-auto">
                         <div class="col mb-3">
-                            <div class="form-floating w-50 ms-auto">
+                            <div class="form-floating w-75 ms-auto">
                                 <input type="text" class="form-control" id="txtAppaterno" name="txtAppaterno"
                                     placeholder="Apellido paterno" required>
                                 <label for="txtAppaterno">Apellido paterno</label>
                             </div>
                         </div>
                         <div class="col mb-3">
-                            <div class="form-floating w-50">
+                            <div class="form-floating w-75">
                                 <input type="text" class="form-control" id="txtApmaterno" name="txtApmaterno"
                                     placeholder="Apellido materno" required>
                                 <label for="txtApmaterno">Apellido materno</label>
                             </div>
                         </div>
                     </div>
-
                     <div class="form-floating w-50 mx-auto mb-3">
                         <input type="email" class="form-control" id="txtMail" name="txtMail" placeholder="Correo"
                             required>
@@ -107,21 +106,25 @@
                     </div>
                     <div class="form-floating w-50 mx-auto mb-3">
                         <input type="number" class="form-control" id="txtTelefono" name="txtTelefono"
-                            placeholder="Telefono" required>
-                        <label for="txtTelefono">Telefono</label>
+                            placeholder="Teléfono" required>
+                        <label for="txtTelefono">Teléfono</label>
                     </div>
-
-                    <div class="form-floating w-50 mx-auto mb-5 ">
-                        <textarea class="form-control" id="txtComentario" name="txtComentario" placeholder="Comentario"
-                            required style="height: 100px;resize: none;"></textarea>
+                    <div class="form-floating w-50 mx-auto mb-5">
+                        <textarea class="form-control" id="txtComentario" name="txtComentario"
+                            placeholder="Ingrese su comentario" required
+                            style="height: 100px; resize: none;"></textarea>
                         <label for="txtComentario">Ingrese su comentario</label>
                     </div>
                     <div class="w-50 mx-auto mb-3">
-                        <button type="button" id="btnEnviar" class="btn btn-outline-primary">Ingresar</button>
+                        <button type="button" id="btnEnviar" class="btn btn-outline-primary">Enviar</button>
+                    </div>
+                    <div class="w-50 mx-auto mb-3">
+                        <p id="warnings"></p>
                     </div>
                 </form>
             </div>
         </div>
+
 
 
         <!-- Footer -->
@@ -242,7 +245,7 @@
         </footer>
         <!-- Footer -->
 
-
+        <script src="validacionesContacto.js"></script>
     </main>
 
 

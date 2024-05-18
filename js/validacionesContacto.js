@@ -1,26 +1,15 @@
-const rut = document.getElementById('txtRut');
-const nombre = document.getElementById('txtNombre');
-const apellidoPaterno = document.getElementById('txtAppaterno');
-const apellidoMaterno = document.getElementById('txtApmaterno');
-const correo = document.getElementById('txtMail');
-const telefono = document.getElementById('txtTelefono');
-const comentario = document.getElementById('txtComentario');
-const parrafo = document.getElementById('warnings');
+const rut = document.querySelector('[name="txtRut"]');
+const nombre = document.querySelector('[name="txtNombre"]');
+const apellidoPaterno = document.querySelector('[name="txtAppaterno"]');
+const apellidoMaterno = document.querySelector('[name="txtApmaterno"]');
+const email = document.querySelector('[name="txtMail"]');
+const telefono = document.querySelector('[name="txtTelefono"]');
+const mensaje = document.querySelector('[name="txtComentario"]');
 
 
-const form = document.getElementById('#formularioContacto');
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    let warnings = '';
-    let regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-
-    if (rut.value.length < 9) {
-        warnings += 'El rut no es válido <br>';
+rut.addEventListener("blur", function (e) {
+    const fieldValue = e.target.value;
+    if (fieldValue.value <= 0) {
+        console.log("Rut no puede estar vacio");
     }
-    if (nombre.value.length < 3) {
-        warnings += 'El nombre debe ser mayor A 3 <br>';
-    }
-})
-
-
+});
