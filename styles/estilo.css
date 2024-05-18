@@ -188,3 +188,17 @@ h3.cart-products {
 .cart-products .item .item-content h5.cart-price{
     font-weight: 700;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+img.servicio {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
