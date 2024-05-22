@@ -15,6 +15,7 @@
 
 <body>
     <!-- NavBar -->
+
     <nav class="navbar navbar-expand-lg bg-body-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="indexprincpal.html">Tienda Muchacho</a>
@@ -76,22 +77,23 @@
                     <form action="" id="loginForm">
                         <div class="mb-4">
                             <label for="correo" class="form-label">Correo Electrónico</label>
-                            <input type="email" id="correo" class="form-control" name="correo" required>
+                            <input type="email" id="correo" class="form-control" name="correo">
 
 
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" id="password" class="form-control" name="passwordLogin" required>
+                            <label for="passwordLogin" class="form-label">Contraseña</label>
+                            <input type="password" id="passwordLogin" class="form-control" name="passwordLogin">
                         </div>
                         <div class="w-50 mx-auto mb-4">
                             <center>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnLogin">Iniciar
+                                <button class="btn btn-primary btn-lg btn-block" id="btnLogin">Iniciar
                                     Sesión</button>
-                                <div id="errores"></div>
-                            </center>
-                        </div>
 
+                            </center>
+
+                        </div>
+                        <div id="warnings" class="mb-4 mt-4"></div>
 
 
                     </form>
