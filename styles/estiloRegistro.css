@@ -4,7 +4,6 @@
     background-color: transparent;
     border: none;
     font-size: 1.8rem;
-    /* margin: auto; */
 
 }
 
@@ -54,21 +53,22 @@
     margin-left: 50px;
 }
 
-#btnClear {
-    float: left;
-    margin-left: 45px;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-#btnVerify {
-    float: left;
-    margin-left: 40px;
+input[type=number] {
+    -moz-appearance: textfield;
 }
+
+
 
 /* Tamaño de label del 50% */
 label {
     font-size: 1.rem;
     font-weight: bolder;
-    /* width: 50%; */
 }
 
 .form-floating.mb-3 {
