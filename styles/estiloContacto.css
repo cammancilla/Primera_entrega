@@ -60,18 +60,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-label {
+/* label {
   font-size: 0.8rem;
-}
+} */
 
 
 
 p {
-  font-size: 0.8rem;
-}
-
-
-#txtAppaterno,
-#txtApmaterno {
   font-size: 0.8rem;
 }
