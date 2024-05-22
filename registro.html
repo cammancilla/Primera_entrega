@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/estiloRegistro.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/validacionRegistro.js"></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -68,77 +69,67 @@
     </nav>
 
     <!-- Formulario de Registro -->
-    <!-- Input: Nombre, Apellido, Rut, Correo  -->
-    <div class="container-fluid">
+    <!-- Input: Nombre, Apellido, Rut, Correo, Edad, Contraseña, Confirmar Contraseña -->
+    <div class="container-fluid mt-5 mb-4">
         <div class="row">
-            <form action="" id="formularioRegistro" class="col-6 text-center mx-auto shadow-lg mt-5">
-                <div class="my-3">
-                    <h4>Formulario de registro</h4>
-                </div>
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="text" class="form-control" id="txtRut" name="txtRut" placeholder="Ingrese su rut"
-                        required>
-                    <label for="txtRut">Rut</label>
-                </div>
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Nombre"
-                        required>
-                    <label for="txtNombre">Nombre</label>
-                </div>
-                <div class="row mx-auto">
-                    <div class="col mb-3">
-                        <div class="form-floating w-50 ms-auto">
-                            <input type="text" class="form-control" id="txtAppaterno" name="txtAppaterno"
-                                placeholder="Apellido paterno" required>
-                            <label for="txtAppaterno">Apellido paterno</label>
+            <div class="col-md-6 mx-auto">
+
+                <div class="card card-body">
+                    <h3 class="text-center mb-4">Registro</h3>
+
+                    <form action="" id="formularioRegistro">
+
+                        <div class="mb-4">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control " id="nombre" name="nombre">
                         </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="form-floating w-50">
-                            <input type="text" class="form-control" id="txtApmaterno" name="txtApmaterno"
-                                placeholder="Apellido materno" required>
-                            <label for="txtApmaterno">Apellido materno</label>
+
+                        <div class="mb-4">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido">
                         </div>
-                    </div>
-                </div>
 
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="number" class="form-control" id="txtEdad" name="txtEdad" placeholder="Edad" required>
-                    <label for="txtEdad">Edad</label>
-                </div>
+                        <div class="mb-4">
+                            <label for="rut" class="form-label">Rut</label>
+                            <input type="text" class="form-control" id="rut" name="rut"></input>
+                        </div>
 
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="email" class="form-control" id="txtMail" name="txtMail" placeholder="Correo" required>
-                    <label for="txtMail">Correo</label>
-                </div>
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="number" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="Telefono"
-                        required>
-                    <label for="txtTelefono">Telefono</label>
-                </div>
+                        <div class="mb-4">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" name="correo"></input>
+                        </div>
 
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="password" class="form-control" id="txtPass" name="txtPass" placeholder="Contraseña"
-                        required>
-                    <label for="txtPass">Contraseña</label>
-                </div>
+                        <div class="mb-4">
+                            <label for="edad" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="edad" name="edad"></input>
+                        </div>
 
-                <div class="form-floating w-50 mx-auto mb-3">
-                    <input type="password" class="form-control" id="txtPass2" name="txtPass2"
-                        placeholder="Confirme su contraseña" required>
-                    <label for="txtPass2">Confirme contraseña</label>
-                </div>
-                <div id="check">
+                        <div class="mb-4">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña"></input>
+                        </div>
 
-                </div>
-                <div class="w-50 mx-auto mb-3">
-                    <button type="button" id="btnEnviar" class="btn btn-outline-primary">Registrarse</button>
-                    <button type="button" id="btnVerificar" class="btn btn-outline-success">Validar datos</button>
-                </div>
+                        <div class="mb-4">
+                            <label for="confirmarContraseña" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="confirmarContraseña"
+                                name="confirmarContraseña"></input>
+                        </div>
+
+                        <div class="w-50 mx-auto mb-4 text-center">
+                            <button class="btn btn-primary" id="btnRegistro">Registrarse</button>
+                        </div>
+
+                        <div class="mb-4 mt-4" id="warnings"></div>
 
 
-            </form>
+
+                    </form>
+                </div>
+
+
+            </div>
         </div>
+    </div>
     </div>
 
 
