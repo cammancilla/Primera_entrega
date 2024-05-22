@@ -70,66 +70,57 @@
         <!-- * Crear formulario de contacto, con un titulo y un parrafo -->
         <!-- * Datos formulario: Primer nombre, apellido, email, telefono, textarea de informacion adicional -->
         <!-- * Container-Fluid -->
-        <!-- * Espacio input: witdh:50% -->
 
-        <div class="container-fluid">
+
+        <div class="container-fluid mt-5 mb-4">
             <div class="row">
-                <form id="formularioContacto" class="col-6 text-center mx-auto shadow-lg mt-5 mb-5 ">
-                    <div class="my-3">
-                        <h4>Contáctanos</h4>
-                    </div>
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="text" class="form-control" id="txtRut" name="txtRut" placeholder="Ingrese su RUT"
-                            required>
-                        <span></span>
-                        <label for="txtRut">RUT</label>
-                    </div>
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Nombre"
-                            required>
-                        <span></span>
-                        <label for="txtNombre">Nombre</label>
-                    </div>
+                <div class="col-md-6 mx-auto">
+                    <div class="card card-body">
+                        <h3 class="text-center mb-4">
+                            Contactanos!
+                        </h3>
 
+                        <form action="" id="formularioContacto">
 
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="text" class="form-control" id="txtApellido" name="txtApellido"
-                            placeholder="Apellido" required>
-                        <span></span>
-                        <label for="txtApellido">Apellido</label>
-                    </div>
+                            <div class="mb-4">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre">
+                            </div>
 
+                            <div class="mb-4">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" name="apellido" id="apellido" class="form-control">
+                            </div>
 
+                            <div class="mb-4">
+                                <label for="correo" class="form-label">Correo</label>
+                                <input type="email" name="correo" id="correo" class="form-control">
+                            </div>
 
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="email" class="form-control" id="txtMail" name="txtMail" placeholder="Correo"
-                            required>
-                        <span></span>
-                        <label for="txtMail">Correo</label>
+                            <div class="mb-4">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="number" name="telefono" id="telefono" class="form-control">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="comentario" class="form-label">Agrega tu comentario / Queja / Recomendación
+                                </label>
+                                <textarea name="comentario" id="comentario" class="form-control"
+                                    style="height: 100px;resize: none;"></textarea>
+                            </div>
+
+                            <div class="w-50 mx-auto mb-4 text-center">
+                                <button class="btn btn-primary" id="btnContacto">Enviar comentarios</button>
+                            </div>
+
+                            <div class="mb-4 mt-4" id="warnings"></div>
+
+                        </form>
+
                     </div>
-                    <div class="form-floating w-50 mx-auto mb-3">
-                        <input type="number" class="form-control" id="txtTelefono" name="txtTelefono"
-                            placeholder="Teléfono" required>
-                        <span></span>
-                        <label for="txtTelefono">Teléfono</label>
-                    </div>
-                    <div class="form-floating w-50 mx-auto mb-5">
-                        <textarea class="form-control" id="txtComentario" name="txtComentario"
-                            placeholder="Ingrese su comentario" required
-                            style="height: 100px; resize: none;"></textarea>
-                        <span></span>
-                        <label for="txtComentario">Ingrese su comentario</label>
-                    </div>
-                    <div class="w-50 mx-auto mb-3">
-                        <button type="button" id="btnEnviar" class="btn btn-outline-primary">Enviar</button>
-                    </div>
-                    <div class="w-50 mx-auto mb-3">
-                        <p id="warnings"></p>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-
 
 
         <!-- Footer -->
