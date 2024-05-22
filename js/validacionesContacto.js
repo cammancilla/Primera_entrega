@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (nombre.value == '' || nombre.value.length < 2) {
             mensaje.innerHTML = "<div class='alert alert-danger w-50 mx-auto text-center'>Nombre no puede estar vacio o posee menos de 3 Caracteres</div>";
             mensaje.classList.add("alert-danger");
-            console.log("Nombre no puede estar vacio")
+            console.log("Nombre no puede estar vacio");
+            return;
 
         }
     });
